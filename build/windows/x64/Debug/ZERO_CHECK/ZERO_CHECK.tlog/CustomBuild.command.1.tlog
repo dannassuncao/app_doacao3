@@ -1,0 +1,10 @@
+^C:\_FLUTTER\APP_DOACAO2\BUILD\WINDOWS\CMAKEFILES\8BAEBD4324A7DBFD918B81D45A8D2DD0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/_flutter/app_doacao2/windows -BC:/_flutter/app_doacao2/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/_flutter/app_doacao2/build/windows/app_doacao.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
